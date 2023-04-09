@@ -4,7 +4,6 @@
 Evelyn Quan, CSE15L Section A05
 
 <br/>
-
 ### Step 1: Download Visual Studio Code
 
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
@@ -26,7 +25,6 @@ For our purposes, we want to make sure we are using the newly installed **git ba
 ![Image](https://drive.google.com/file/d/1nIHqSM2I0cg7RaM7BUR05KoqO5elErSV/view?usp=sharing)
 
 <br/>
-
 Next, use `Ctrl + Shift + P` to open the command palette. Type "Select Default Profile", and select **Git Bash** from the options.
 
 You can now click on the + icon from your terminal window, and you should see a new Git Bash terminal pop up!
@@ -75,13 +73,13 @@ Now that you have finished ssh-ing, you can try out some commands on both your c
 
 Here are some commands you can try out:
 
-- <mark>cd ~</mark>
-- <mark>cd</mark>
-- <mark>ls -lat</mark>
-- <mark>ls -a</mark>
-- <mark>ls \<directory> </mark> where \<directory> is <mark>/home/linux/ieng6/cs15lsp23/cs15lsp23abc</mark>, with <mark>abc</mark> being another person's username
-- <mark>cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/</mark>
-- <mark>cat /home/linux/ieng6/cs15lsp23/public/hello.txt</mark>
+- **cd ~**
+- **cd**
+- **ls -lat**
+- **ls -a**
+- **ls \<directory>** where **\<directory>** is **/home/linux/ieng6/cs15lsp23/cs15lsp23abc**, with **abc** being another person's username
+- **cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/**
+- **cat /home/linux/ieng6/cs15lsp23/public/hello.txt**
  
 Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
  
