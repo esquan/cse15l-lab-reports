@@ -6,7 +6,6 @@ Evelyn Quan, CSE15L Section A05
 <br/>
 
 This tutorial should show you the basics of remotely accessing a computer in the CSE basement, and how to log into a course-specific account on ieng6 to do so.
-
 <br/>
 
 ### Step 1: Download Visual Studio Code
@@ -14,6 +13,8 @@ This tutorial should show you the basics of remotely accessing a computer in the
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
 <br/>
+
+![Image](https://drive.google.com/uc?id=1Aj_flHfVfU3aDp7WzqGQMShf1i9aHkir)
 
 ### Step 2: Install Git
 
@@ -27,7 +28,7 @@ For our purposes, we want to make sure we are using the newly installed **git ba
 
 <br/>
 
-![Image](https://drive.google.com/file/d/1nIHqSM2I0cg7RaM7BUR05KoqO5elErSV/view?usp=sharing)
+![Image](https://drive.google.com/uc?id=1nIHqSM2I0cg7RaM7BUR05KoqO5elErSV)
 
 <br/>
 
@@ -37,7 +38,7 @@ You can now click on the + icon from your terminal window, and you should see a 
 
 <br/>
 
-*insert image here later*
+![Image](https://drive.google.com/uc?id=1rItyYEn1c42PMInBeKvTs4Y5JQPXFyqO)
 
 <br/>
 
@@ -103,6 +104,7 @@ Now that you have finished ssh-ing, you can try out some commands on both your c
 
 Here are some commands you can try out:
 
+
 - **cd ~**
 - **cd**
 - **ls -lat**
@@ -110,6 +112,12 @@ Here are some commands you can try out:
 - **ls \<directory>** where **\<directory>** is **/home/linux/ieng6/cs15lsp23/cs15lsp23abc**, with **abc** being another person's username
 - **cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/**
 - **cat /home/linux/ieng6/cs15lsp23/public/hello.txt**
+ 
+ <br/>
+ 
+ ![Image](https://drive.google.com/uc?id=1ovrK5DU1H7gpSg6f3eLgVzCtvANuzjiD)
+ 
+ <br/>
  
 Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
 
@@ -121,5 +129,6 @@ Now you know some of the bascis of remote access and how to log onto a course-sp
 
 Good work!
 
+<br/>
 
 ---
