@@ -16,9 +16,15 @@ To start off, you want to make sure you have Visual Studio Code downloaded! Firs
 
 ![Image](https://drive.google.com/uc?id=1Aj_flHfVfU3aDp7WzqGQMShf1i9aHkir)
 
+<br/>
+
 ### Step 2: Install Git
 
-You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will utilize with Visual Studio Code.
+You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will be able to utilize with Visual Studio Code.
+
+<br/>
+
+![Image](https://drive.google.com/uc?id=1IXA83iBAqLhzwm1S29kxYrIzOhTs8R6S)
 
 <br/>
 
@@ -51,7 +57,6 @@ Now we can type the following command into the terminal, but replace the <mark>z
 ```
 $ ssh cs15lsp23zz@ieng.ucsd.edu
 ```
-<br/>
 
 (Make sure you are not typing in the $ sign, it is only supposed to illustrate we are typing a command in the terminal!)
 
