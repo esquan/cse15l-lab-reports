@@ -17,7 +17,7 @@ You can skip this step if you are on a Mac. If you are on a Windows, you will ne
 
 For our purposes, we want to make sure we are using the newly installed **git bash** in Visual Studio Code, and not the default **powershell**. To change this, first open a terminal in VSCode. You should see the option for this on the top menu of your screen (Click on Terminal → New Terminal). Or alternatively you can do ``Ctrl or Command + ` ``.
 
-*insert image here later*
+![Image](https://drive.google.com/file/d/1nIHqSM2I0cg7RaM7BUR05KoqO5elErSV/view?usp=sharing)
 
 Next, use `Ctrl + Shift + P` to open the command palette. Type "Select Default Profile", and select **Git Bash** from the options.
 
@@ -62,13 +62,18 @@ Now that you have finished ssh-ing, you can try out some commands on both your c
 
 Here are some commands you can try out:
 
-- cd ~
-- cd
-- ls -lat
-- ls -a
-- ls \<directory> where \<directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, with abc being another person's username
+- <mark>cd ~</mark>
+- <mark>cd</mark>
+- <mark>ls -lat</mark>
+- <mark>ls -a</mark>
+- ==ls \<directory>==   where \<directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, with abc being another person's username
 - cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
 - cat /home/linux/ieng6/cs15lsp23/public/hello.txt
  
-Finally, if you want to log out of the remote server, you can first use `Ctrl-D` and then run the command exit.
+Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
 
+---
+
+Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.
+
+Good work!
