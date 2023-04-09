@@ -7,6 +7,7 @@ Evelyn Quan, CSE15L Section A05
 
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
+
 ### Step 2: Install Git
 
 You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will utilize with Visual Studio Code.
@@ -23,6 +24,7 @@ Next, use `Ctrl + Shift + P` to open the command palette. Type "Select Default P
 You can now click on the + icon from your terminal window, and you should see a new Git Bash terminal pop up!
 
 *insert image here later*
+
 
 ### Step 4: Begin Remotely Connecting
 
@@ -50,7 +52,9 @@ Put something later.
 
 You have now successfully connected to a computer in the CSE basement and have remote access over it! This means that any commands that you run on your own computer will run on that computer as well.
 
+
 Here's some terminology: your computer is considered the *client* while the computer in the basement is the *server*!
+
 
 ### Step 5: Explore
 
@@ -64,6 +68,10 @@ Here are some commands you can try out:
 - ls -a
 - ls <directory>, and <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, with abc being another person's username.
 - cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-- cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+- cat /home/linux/ieng6/cs15lsp23/public/hello.txt \n\n
+ 
+
+Finally, if you want to log out of the remote server, you can first use `C
+ 
  
 
