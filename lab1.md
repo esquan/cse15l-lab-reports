@@ -1,11 +1,11 @@
 
 # Lab Report 1: Remote Access and FileSystem
 ## __How to log into a course-specific account on ieng6__
-Evelyn Quan, CSE15L Section A05
+*Evelyn Quan, CSE15L Section A05*
 
 <br/>
 
-This tutorial should show you the basics of remotely accessing a computer in the CSE basement, and how to log into a course-specific account on ieng6 to do so.
+This tutorial will show you the basics of remotely accessing a computer in the CSE basement, and how to log into a course-specific account on ieng6 to do so!
 
 <br/>
 
@@ -57,7 +57,7 @@ Now we can type the following command into the terminal, but replace the <mark>z
 $ ssh cs15lsp23zz@ieng.ucsd.edu
 ```
 
-(Make sure you are not typing in the $ sign, it is only supposed to illustrate we are typing a command in the terminal!)
+*Make sure you are not typing in the $ sign, it is only supposed to illustrate we are typing a command in the terminal!*
 
 <br/>
 
