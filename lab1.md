@@ -4,17 +4,20 @@
 Evelyn Quan, CSE15L Section A05
 
 <br/>
+<br/>
 
 ### Step 1: Download Visual Studio Code
 
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
 <br/>
+<br/>
 
 ### Step 2: Install Git
 
 You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will utilize with Visual Studio Code.
 
+<br/>
 <br/>
 
 ### Step 3: Setting Up Bash
@@ -67,6 +70,8 @@ You have now successfully connected to a computer in the CSE basement and have r
 
 
 Here's some terminology: your computer is considered the *client* while the computer in the basement is the *server*!
+
+<br/>
 <br/>
 
 ### Step 5: Explore
@@ -84,9 +89,12 @@ Here are some commands you can try out:
 - cat /home/linux/ieng6/cs15lsp23/public/hello.txt
  
 Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
+ 
 <br/>
+ 
 ---
 <br/>
+ 
 Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.
 
 Good work!
