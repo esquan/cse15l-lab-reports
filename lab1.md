@@ -52,17 +52,15 @@ You can now click on the + icon from your terminal window, and you should see a 
 
 Now we can type the following command into the terminal, but replace the <mark>zz</mark> with the letters of your course-specific account (please visit [here](https://sdacs.ucsd.edu/~icc/index.php) to find your course-specific account if you have not already):
 
-<br/>
-
 ```
 $ ssh cs15lsp23zz@ieng.ucsd.edu
 ```
 
 (Make sure you are not typing in the $ sign, it is only supposed to illustrate we are typing a command in the terminal!)
 
-Because this is the first time you are connecting to this server, you will see a message like this pop up:
-
 <br/>
+
+Because this is the first time you are connecting to this server, you will see a message like this pop up:
 
 ```
 $ ssh cs15lsp23zz@ieng6.ucsd.edu
@@ -75,8 +73,6 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 To continue connecting, type <mark>yes</mark> and press enter, then proceed to give your password and press enter again. *Note, when you type the password, due to security reasons, it will not appear as if you are typing anything on your computer. Rest assured that it is in fact typing something into the terminal!*
 
 At this point, you should see something like this being outputted:
-
-<br/>
 
 ```
 # Now on remote server
