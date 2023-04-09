@@ -7,7 +7,6 @@
 
 This tutorial will show you the basics of remotely accessing a computer in the CSE basement, and how to log into a course-specific account on ieng6 to do so!
 
-<br/>
 
 ### Step 1: Download Visual Studio Code
 
