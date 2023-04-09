@@ -4,20 +4,17 @@
 Evelyn Quan, CSE15L Section A05
 
 <br/>
-<br/>
 
 ### Step 1: Download Visual Studio Code
 
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
 <br/>
-<br/>
 
 ### Step 2: Install Git
 
 You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will utilize with Visual Studio Code.
 
-<br/>
 <br/>
 
 ### Step 3: Setting Up Bash
@@ -38,7 +35,6 @@ You can now click on the + icon from your terminal window, and you should see a 
 
 *insert image here later*
 
-<br/>
 <br/>
 
 ### Step 4: Begin Remotely Connecting
@@ -72,7 +68,6 @@ You have now successfully connected to a computer in the CSE basement and have r
 Here's some terminology: your computer is considered the *client* while the computer in the basement is the *server*!
 
 <br/>
-<br/>
 
 ### Step 5: Explore
 
@@ -84,9 +79,9 @@ Here are some commands you can try out:
 - <mark>cd</mark>
 - <mark>ls -lat</mark>
 - <mark>ls -a</mark>
-- <mark>ls \<directory> </mark> where \<directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, with abc being another person's username
-- cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-- cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+- <mark>ls \<directory> </mark> where \<directory> is <mark>/home/linux/ieng6/cs15lsp23/cs15lsp23abc</mark>, with <mark>abc</mark> being another person's username
+- <mark>cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/</mark>
+- <mark>cat /home/linux/ieng6/cs15lsp23/public/hello.txt</mark>
  
 Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
  
