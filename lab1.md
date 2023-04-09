@@ -3,22 +3,28 @@
 ## __How to log into a course-specific account on ieng6__
 Evelyn Quan, CSE15L Section A05
 
+<br/>
+
 ### Step 1: Download Visual Studio Code
 
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
 <br/>
+
 ### Step 2: Install Git
 
 You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will utilize with Visual Studio Code.
 
 <br/>
+
 ### Step 3: Setting Up Bash
 
 For our purposes, we want to make sure we are using the newly installed **git bash** in Visual Studio Code, and not the default **powershell**. To change this, first open a terminal in VSCode. You should see the option for this on the top menu of your screen (Click on Terminal → New Terminal). Or alternatively you can do ``Ctrl or Command + ` ``.
 
 <br/>
+
 ![Image](https://drive.google.com/file/d/1nIHqSM2I0cg7RaM7BUR05KoqO5elErSV/view?usp=sharing)
+
 <br/>
 
 Next, use `Ctrl + Shift + P` to open the command palette. Type "Select Default Profile", and select **Git Bash** from the options.
@@ -26,9 +32,12 @@ Next, use `Ctrl + Shift + P` to open the command palette. Type "Select Default P
 You can now click on the + icon from your terminal window, and you should see a new Git Bash terminal pop up!
 
 <br/>
+
 *insert image here later*
+
 <br/>
 <br/>
+
 ### Step 4: Begin Remotely Connecting
 
 Now we can type the following command into the terminal, but replace the <mark>zz</mark> with the letters of your course-specific account (please visit [here](https://sdacs.ucsd.edu/~icc/index.php) to find your course-specific account if you have not already):
