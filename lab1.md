@@ -28,7 +28,7 @@ You can now click on the + icon from your terminal window, and you should see a 
 
 ### Step 4: Begin Remotely Connecting
 
-Now we can type the following command into the terminal, but replace the ==zz== with the letters of your course-specific account (please visit [here](https://sdacs.ucsd.edu/~icc/index.php) to find your course-specific account if you have not already):
+Now we can type the following command into the terminal, but replace the <mark>zz</mark> with the letters of your course-specific account (please visit [here](https://sdacs.ucsd.edu/~icc/index.php) to find your course-specific account if you have not already):
 
 ```
 $ ssh cs15lsp23zz@ieng.ucsd.edu
@@ -66,12 +66,9 @@ Here are some commands you can try out:
 - cd
 - ls -lat
 - ls -a
-- ls <directory>, and <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, with abc being another person's username.
+- ls \<directory> where \<directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, with abc being another person's username
 - cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-- cat /home/linux/ieng6/cs15lsp23/public/hello.txt \n\n
+- cat /home/linux/ieng6/cs15lsp23/public/hello.txt
  
-
-Finally, if you want to log out of the remote server, you can first use `C
- 
- 
+Finally, if you want to log out of the remote server, you can first use `Ctrl-D` and then run the command exit.
 
