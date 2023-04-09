@@ -7,12 +7,12 @@ Evelyn Quan, CSE15L Section A05
 
 To start off, you want to make sure you have Visual Studio Code downloaded! First, visit this [link](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
-
+<br />
 ### Step 2: Install Git
 
 You can skip this step if you are on a Mac. If you are on a Windows, you will need to install [git](https://gitforwindows.org/), which will have tools we will utilize with Visual Studio Code.
 
-
+<br/>
 ### Step 3: Setting Up Bash
 
 For our purposes, we want to make sure we are using the newly installed **git bash** in Visual Studio Code, and not the default **powershell**. To change this, first open a terminal in VSCode. You should see the option for this on the top menu of your screen (Click on Terminal → New Terminal). Or alternatively you can do ``Ctrl or Command + ` ``.
