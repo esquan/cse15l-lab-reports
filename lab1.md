@@ -53,7 +53,7 @@ You can now click on the + icon from your terminal window, and you should see a 
 Now we can type the following command into the terminal, but replace the <mark>zz</mark> with the letters of your course-specific account (please visit [here](https://sdacs.ucsd.edu/~icc/index.php) to find your course-specific account if you have not already):
 
 ```
-$ ssh cs15lsp23zz@ieng.ucsd.edu
+$ ssh cs15lsp23zz@ieng6.ucsd.edu
 ```
 
 *Make sure you are not typing in the $ sign, it is only supposed to illustrate we are typing a command in the terminal!*
@@ -74,22 +74,8 @@ To continue connecting, type <mark>yes</mark> and press enter, then proceed to g
 
 At this point, you should see something like this being outputted:
 
-```
-# Now on remote server
-Last login: Sat Apr 08 23:31:05 2023 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
-quota: No filesystem specified.
-Hello cs15lsp23zz, you are currently logged into ieng6-203.ucsd.edu
+![Image](https://drive.google.com/file/d/1T-vw-iNlNQ36g0pQaDS1u-qqFepj8FHf/view?usp=sharing)
 
-You are using 0% CPU on this system
-
-Cluster Status 
-Hostname     Time    #Users  Load  Averages  
-ieng6-201   22:45:01   9  0.04,  0.16,  0.16
-ieng6-202   22:45:01   5  3.06,  3.19,  3.21
-ieng6-203   22:45:01   7  0.07,  0.18,  0.16
-
-Sat Apr 08, 2023 11:32pm - Prepping cs15lsp23
-```
 <br/>
 
 You have now successfully connected to a computer in the CSE basement and have remote access over it! This means that any commands that you run on your own computer will run on that computer as well.
@@ -110,6 +96,7 @@ Here are some commands you can try out:
 - **cd**
 - **ls -lat**
 - **ls -a**
+- **ls -s**
 - **ls \<directory>** where **\<directory>** is **/home/linux/ieng6/cs15lsp23/cs15lsp23abc**, with **abc** being another person's username
 - **cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/**
 - **cat /home/linux/ieng6/cs15lsp23/public/hello.txt**
@@ -120,9 +107,17 @@ Here are some commands you can try out:
  
  <br/>
  
-Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
+For instance, typing the command `cd` without any arguments will take you to your home directory. Typing `cd ~` can also take you back to your home directory. This command ultimately serves to help you to change directories in order to access certain files/folders, as adding an argument of a path to a folder after `cd` will take you into that directory!
+
+`ls` is also a neat command that will list all the contents of a directory for you to see. There are many options to add onto `ls`, such as `ls -s` which will print the size of each of your files in the directory, in blocks. The `cat` command is short for "concatenate", and will read data from a file and print out its contents as an output. The `cp` command will take the file(s) and/or directory given as the first argument and copy it over to the destination specified in the second argument!
 
 <br/>
+
+![Image](https://drive.google.com/file/d/1Et-GogGT0o-LFnS7q1fJ_AeHKhRV7cc4/view?usp=sharing)
+
+<br/>
+
+Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
 
 Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.
 
