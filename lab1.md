@@ -103,7 +103,7 @@ Here are some commands you can try out:
  
  <br/>
  
- ![Image](https://drive.google.com/uc?id=1ovrK5DU1H7gpSg6f3eLgVzCtvANuzjiD)
+ ![Image](https://drive.google.com/uc?id=1T-vw-iNlNQ36g0pQaDS1u-qqFepj8FHf)
  
  <br/>
  
@@ -113,7 +113,7 @@ For instance, typing the command `cd` without any arguments will take you to you
 
 <br/>
 
-![Image](https://drive.google.com/file/d/1Et-GogGT0o-LFnS7q1fJ_AeHKhRV7cc4/view?usp=sharing)
+![Image](https://drive.google.com/uc?id=1_rMANa4pwc1qe1boYC9lxOB3JEAekpnv)
 
 <br/>
 
