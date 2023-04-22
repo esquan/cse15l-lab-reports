@@ -74,7 +74,7 @@ To continue connecting, type <mark>yes</mark> and press enter, then proceed to g
 
 At this point, you should see something like this being outputted:
 
-![Image](https://drive.google.com/file/d/1T-vw-iNlNQ36g0pQaDS1u-qqFepj8FHf/view?usp=sharing)
+![Image](https://drive.google.com/uc?id=1ovrK5DU1H7gpSg6f3eLgVzCtvANuzjiD)
 
 <br/>
 
@@ -119,7 +119,7 @@ For instance, typing the command `cd` without any arguments will take you to you
 
 Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
 
-Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.
+*Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.*
 
 <br/>
 
