@@ -117,9 +117,9 @@ For instance, typing the command `cd` without any arguments will take you to you
 
 Finally, if you want to log out of the remote server, you can first use `Ctrl-D`, or run the command <mark>exit</mark>.
 
-*Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.*
-
 <br/>
+
+*Now you know some of the bascis of remote access and how to log onto a course-specific account on ieng6.*
 
 Good work!
 
