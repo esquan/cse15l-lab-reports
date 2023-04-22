@@ -76,7 +76,7 @@ To continue connecting, type <mark>yes</mark> and press enter, then proceed to g
 
 At this point, you should see something like this being outputted:
 
-![Image](https://drive.google.com/uc?id=1ovrK5DU1H7gpSg6f3eLgVzCtvANuzjiD)
+![Image](https://drive.google.com/uc?id=1CKyvM6vA8nUiOV1xDphblbEXAX9TUTJz)
 
 <br/>
 
