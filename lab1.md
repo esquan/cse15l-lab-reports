@@ -72,6 +72,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 To continue connecting, type <mark>yes</mark> and press enter, then proceed to give your password and press enter again. *Note, when you type the password, due to security reasons, it will not appear as if you are typing anything on your computer. Rest assured that it is in fact typing something into the terminal!*
 
+<br/>
+
 At this point, you should see something like this being outputted:
 
 ![Image](https://drive.google.com/uc?id=1ovrK5DU1H7gpSg6f3eLgVzCtvANuzjiD)
@@ -101,11 +103,7 @@ Here are some commands you can try out:
 - **cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/**
 - **cat /home/linux/ieng6/cs15lsp23/public/hello.txt**
  
- <br/>
- 
- ![Image](https://drive.google.com/uc?id=1T-vw-iNlNQ36g0pQaDS1u-qqFepj8FHf)
- 
- <br/>
+<br/>
  
 For instance, typing the command `cd` without any arguments will take you to your home directory. Typing `cd ~` can also take you back to your home directory. This command ultimately serves to help you to change directories in order to access certain files/folders, as adding an argument of a path to a folder after `cd` will take you into that directory!
 
