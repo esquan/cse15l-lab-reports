@@ -85,6 +85,8 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
+The for-loop again will run for arr.length number of iterations, copying over arr[i] as arr[arr.length - i - 1] and would therefore copy over the values of the second part of the array twice. However, with certain symmetric arrays, they still are able to pass Junit tests as their output still matches the expected, since these arrays reversed are just the same array again.
+
 #### **Junit Test:**
 
 ```
@@ -102,6 +104,8 @@ This will pass on Junit, because the array is symmetrical.
 ### Symptom From Running The Tests
 
 ![Image](ArrayTests_Symptom.png)
+
+We see that of our two tests, only one of them passed and the other failed. The test with the input1 array {2, 3, 2} passed its expected output, but the test with input2 {1, 2, 3, 4} did not. It expected the value 2 at arr[2] but instead found 3, and also would have found 4 at arr[3].
 
 <br/>
 
