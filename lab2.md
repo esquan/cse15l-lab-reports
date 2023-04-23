@@ -2,7 +2,7 @@
 
 ### Code for my `StringServer`:
 
-![Image](StringServer Code.png)
+![Image](StringServer_Code.png)
 
 <br/>
 
