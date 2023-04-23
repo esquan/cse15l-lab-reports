@@ -138,8 +138,6 @@ The code is now fixed to have the local variable <mark>val</mark> which will sto
 
 The new code works by assigning val to the value of arr[i], then changing arr[i] to be the value arr[arr.length - i - 1]. Afterwards, the code changes the current value of arr[arr.length - i - 1] to be whatever we previously stored in val. We are changing two values of the array simultaneously with each iteration of the loop, so this is why we only run the loop for half of the length of the array. The variable <mark>val</mark> helps us keep the value of the current arr[i] to assign it to the second half of the array.
 
-<br/>
-
 ![Image](ArrayTests_Fixed.png)
 
 Both tests pass now on Junit.
@@ -150,11 +148,11 @@ Both tests pass now on Junit.
 
 ## Part 3
 
-From the labs, I have learned a lot of information that I did not know before. Before coming to UCSD, I had no prior knowledge about coding and barely anything about how URLs work, so everything we have been learning from the labs and from lectures has been new to me.
+From the labs, I have learned a lot of information that I did not know before. Before coming to UCSD, I had no prior knowledge about coding and knew barely anything about how URLs and servers work, so everything we have been learning from the labs and from lectures has been new to me.
 
 From lab 2, I learned how to use Github Desktop to clone a repository from the internet, and to commit and push changes made to my code. Additionally, I learned what forking a repository means, what a port and localhost are, how to run a server on a remote computer, and how to access a URL from the command line using <mark>curl</mark>.
 
-From lab 3, I practiced and became more comfortable with using Junit tests, especially with understanding the command line arguments we use to run the tests which was never explained in CSE 12. I learned that <mark>;</mark> or <mark>:</mark> is used to separate paths where Java will look for classes, that <mark>.jar</mark> is a file format simlar to a <mark>.zip</mark> file but for classes. I also learned that <mark>*</mark> allows you to tell javac to compile all the files in the given directory.
+From lab 3, I practiced and became more comfortable with using Junit tests, especially with understanding the command line arguments we use to run the tests which was never fully explained in CSE 12 despite using these commands. I learned that <mark>;</mark> or <mark>:</mark> is used to separate paths where Java will look for classes, and that <mark>.jar</mark> is a file format simlar to a <mark>.zip</mark> file but for classes. I also learned that <mark>*</mark> allows you to tell javac to compile all the files in the given directory.
 
 <br/>
 
