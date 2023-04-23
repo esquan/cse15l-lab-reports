@@ -1,6 +1,6 @@
 # Lab Report 2: Servers and Bugs
 
-*Evelyn Quan, Section A05, CSE15L
+*Evelyn Quan, Section A05, CSE15L*
 
 ## Part 1
 
@@ -12,6 +12,8 @@
 
 ### Examples of `StringServer`:
 
+#### **#1**
+
 ![Image](StringServer_Example_1.png)
 
 The <mark>main</mark> method of the StringServer class is called to start the server with the port 3333, and the <mark>handleRequest</mark> method in the class StringHandler is called to perform the change to the page when we want to add a message. The relevant argument to the <mark>main</mark> method is args[0], the port number which is entered on the command line for the web server (3333 in this case). The argument of the <mark>handleRequest</mark> method is the url, where if it contains "/add-message", then we want to split the url's path by "=" into an array <mark>param</mark> of strings. 
@@ -21,6 +23,8 @@ We then would take the second element of that array to be the string we will add
 In this case, we added "flying" as the output as our first string.
 
 <br/>
+
+#### **#2**
 
 ![Image](StringServer_Example_2.png)
 
@@ -43,7 +47,7 @@ car
 
 ### Failure-Inducing Input For Buggy Program
 
-#### Associated Code:
+#### **Associated Code:**
 
 ```
 static void reverseInPlace(int[] arr) {
@@ -55,7 +59,7 @@ static void reverseInPlace(int[] arr) {
 
 With this for-loop in <mark>reverseInPlace</mark>, arr[0] will copy over as arr[3] and arr[1] as arr[2], but then arr[2] would become whatever value is in arr[1], which has already been reassigned as arr[2]. The loop running for arr.length number of iterations will cause the second half of this asymmetric loop to be written twice in the array instead of reversing it.
 
-#### Junit Test:
+#### **Junit Test:**
 
 ```
 int[] input2 = {1, 2, 3, 4};
@@ -71,7 +75,7 @@ The final output would be {4, 3, 3, 4} instead of the expected {4, 3, 2, 1}.
 
 ### Input That Doesn't Induce A Failure
 
-#### Associated Code:
+#### **Associated Code:**
 
 ```
 static void reverseInPlace(int[] arr) {
@@ -81,7 +85,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
-#### Junit Test:
+#### **Junit Test:**
 
 ```
 public void testReverseInPlace() {
@@ -103,7 +107,7 @@ This will pass on Junit, because the array is symmetrical.
 
 ### Fixing The Bug
 
-#### Before:
+#### **Before:**
 
 ```
 static void reverseInPlace(int[] arr) {
@@ -113,7 +117,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
-#### After:
+#### **After:**
 
 ```
 static void reverseInPlace(int[] arr) {
