@@ -138,6 +138,8 @@ The code is now fixed to have the local variable <mark>val</mark> which will sto
 
 The new code works by assigning val to the value of arr[i], then changing arr[i] to be the value arr[arr.length - i - 1]. Afterwards, the code changes the current value of arr[arr.length - i - 1] to be whatever we previously stored in val. We are changing two values of the array simultaneously with each iteration of the loop, so this is why we only run the loop for half of the length of the array. The variable <mark>val</mark> helps us keep the value of the current arr[i] to assign it to the second half of the array.
 
+<br/>
+
 ![Image](ArrayTests_Fixed.png)
 
 Both tests pass now on Junit.
