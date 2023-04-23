@@ -8,11 +8,11 @@
 
 ### Examples of `StringServer`:
 
-![Image](StringServer_Example_1)
+![Image](StringServer_Example_1.png)
 
 <br/>
 
-![Image](StringServer_Example_2)
+![Image](StringServer_Example_2.png)
 
 <br/>
 
