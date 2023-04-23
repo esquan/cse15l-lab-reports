@@ -1,3 +1,7 @@
+# Lab Report 2: Servers and Bugs
+
+*Evelyn Quan, Section A05, CSE15L
+
 ## Part 1
 
 ### Code for my `StringServer`:
@@ -12,7 +16,7 @@
 
 The <mark>main</mark> method of the StringServer class is called to start the server with the port 3333, and the <mark>handleRequest</mark> method in the class StringHandler is called to perform the change to the page when we want to add a message. The relevant argument to the <mark>main</mark> method is args[0], the port number which is entered on the command line for the web server (3333 in this case). The argument of the <mark>handleRequest</mark> method is the url, where if it contains "/add-message", then we want to split the url's path by "=" into an array <mark>param</mark> of strings. 
 
-We then would take the second element of that array to be the string we will add to our output. This is done by adding the string + "\n" to a value called outputted, then returning outputted in the end. Every time we add a new string, it will continue on the next line. The value of the string being added does not change, it is simply added to the server's output as it is typed after the "=" in the URL.
+We then would take the second element of that array to be the string we will add to our output. This is done by adding the string + "\n" to a value called <mark>outputted</mark>, then returning <mark>outputted</mark> in the end. Every time we add a new string, it will continue on the next line. The value of the string being added does not change, it is simply added to the server's output if it is typed after the "=" in the URL.
 
 In this case, we added "flying" as the output as our first string.
 
@@ -20,9 +24,11 @@ In this case, we added "flying" as the output as our first string.
 
 ![Image](StringServer_Example_2.png)
 
-With the server already running, we do not need to recall the <mark>main</mark> method in order to use the server again. However, we are still calling the method <mark>handleRequest</mark> again to add another string to our output. The value/variable outputted should read as "flying" + "\n" + "car" + "\n" after adding this second string through the URL. We are again splitting the url's path by "=" into an array of strings and taking the second argument of this array <mark>param</mark> to add to the value/variable "outputted". This is returned in the end and leads to the output we see on the server.
+With the server already running, we do not need to recall the <mark>main</mark> method in order to use the server again. However, we are still calling the method <mark>handleRequest</mark> again to add another string to our output. The relevant argument is the url, which we take the path of in order to perform the request of adding the message on the page. 
 
-Our list on the server at this point reads:
+The value/variable <mark>outputted</mark> should read as "flying" + "\n" + "car" + "\n" after adding this second string through the URL. We are again splitting the url's path by "=" into an array of strings and taking the second argument of this array <mark>param</mark> to add to the value/variable <mark>outputted</mark>. This is returned in the end and leads to the output we see on the server. The value of param[1] is not changing itself as it is simply being added to the variable <mark>outputted</mark>. <mark>outputted</mark> is being updated with every new request to add a message through the url.
+
+As seen in the screenshot, our list on the server at this point reads:
 
 ```
 flying
