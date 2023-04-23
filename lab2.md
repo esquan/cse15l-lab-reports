@@ -24,12 +24,10 @@ With the server already running, we do not need to recall the <mark>main</mark> 
 
 Our list on the server at this point reads:
 
-`flying
-car`
-
-<br/>
-
-<br/>
+```
+flying
+car
+```
 
 <br/>
 
@@ -41,19 +39,23 @@ car`
 
 #### Associated Code:
 
-`static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-  }`
+  }
+```
 
 With this for-loop in <mark>reverseInPlace</mark>, arr[0] will copy over as arr[3] and arr[1] as arr[2], but then arr[2] would become whatever value is in arr[1], which has already been reassigned as arr[2]. The loop running for arr.length number of iterations will cause the second half of this asymmetric loop to be written twice in the array instead of reversing it.
 
 #### Junit Test:
 
-`int[] input2 = {1, 2, 3, 4};
+```
+int[] input2 = {1, 2, 3, 4};
 ArrayExamples.reverseInPlace(input2);
-assertArrayEquals(new int[]{4, 3, 2, 1}, input2);`
+assertArrayEquals(new int[]{4, 3, 2, 1}, input2);
+```
 
 This causes Junit to give the output: “arrays first differed at element [2]; expected:[2] but was:[3] at ArrayTests.testReverseInPlace(ArrayTests.java:13)”
 
@@ -65,21 +67,23 @@ The final output would be {4, 3, 3, 4} instead of the expected {4, 3, 2, 1}.
 
 #### Associated Code:
 
-`static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-  }`
-  
- 
+  }
+```
 
 #### Junit Test:
 
-`public void testReverseInPlace() {
+```
+public void testReverseInPlace() {
     int[] input1 = {2, 3, 2};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{2, 3 ,2}, input1);
-	}`
+	}
+```
 
 This will pass on Junit, because the array is symmetrical.
 
@@ -95,22 +99,26 @@ This will pass on Junit, because the array is symmetrical.
 
 #### Before:
 
-`static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-  }`
+  }
+```
 
 #### After:
 
-`static void reverseInPlace(int[] arr) {
+```
+static void reverseInPlace(int[] arr) {
     int val = 0;
     for(int i = 0; i < arr.length / 2; i += 1) {
       val = arr[i];
       arr[i] = arr[arr.length - i - 1];
       arr[arr.length - i - 1] = val;
     }
-  }`
+  }
+```
 
 The code is now fixed to have the local variable <mark>val</mark> which will store the value of arr[i] so we are not copying the second half of the array over twice as we try to access the values in the first half of the array later only for it to be overwritten in the case of the previous code. The length of the loop will only run for arr.length / 2 number of iterations as well.
 
@@ -126,10 +134,6 @@ Both tests pass now on Junit.
 
 <br/>
 
-<br/>
-
-<br/>
-
 ## Part 3
 
 From the labs, I have learned a lot of information that I did not know before. Before coming to UCSD, I had no prior knowledge about coding and barely anything about how URLs work, so everything we have been learning from the labs and from lectures has been new to me.
@@ -137,8 +141,6 @@ From the labs, I have learned a lot of information that I did not know before. B
 From lab 2, I learned how to use Github Desktop to clone a repository from the internet, and to commit and push changes made to my code. Additionally, I learned what forking a repository means, what a port and localhost are, how to run a server on a remote computer, and how to access a URL from the command line using <mark>curl</mark>.
 
 From lab 3, I practiced and became more comfortable with using Junit tests, especially with understanding the command line arguments we use to run the tests which was never explained in CSE 12. I learned that <mark>;</mark> or <mark>:</mark> is used to separate paths where Java will look for classes, that <mark>.jar</mark> is a file format simlar to a <mark>.zip</mark> file but for classes. I also learned that <mark>*</mark> allows you to tell javac to compile all the files in the given directory.
-
-<br/>
 
 <br/>
 
