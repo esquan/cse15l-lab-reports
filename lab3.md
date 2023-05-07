@@ -21,7 +21,9 @@ gave me the following result:
 ```
 
 <br/>
+
 ---
+
 <br/>
 
 #### Example 2
@@ -74,7 +76,9 @@ Result:
 ```
 
 <br/>
+
 ---
+
 <br/>
 
 #### Example 2
@@ -156,7 +160,9 @@ Result:
 We see that the files under `./technical/government/*` that started with "a" were not included in the output, because this would have required a maxdepth of at least 4.
 
 <br/>
+
 ---
+
 <br/>
 
 #### Example 2
@@ -216,7 +222,9 @@ Result:
 ```
 
 <br/>
+
 ---
+
 <br/>
 
 #### Example 2
