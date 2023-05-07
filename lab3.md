@@ -50,6 +50,8 @@ Result:
 ./technical/911report/preface.txt
 ```
 
+I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and I also received further guidance with understanding its conceptual reasoning through this [StackExchange](https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days) page.
+
 <br/>
 
 ### 2) find -size *n*\[cwbkMG]
@@ -91,6 +93,8 @@ Result:
 ./technical/plos/pmed.0020278.txt
 ./technical/plos/pmed.0020281.txt
 ```
+
+I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
 
 <br/>
 
@@ -167,6 +171,8 @@ Result:
 ./technical/government/Media/residents_sue_city.txt
 ```
 
+I found out about this option for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and also used this [Opensource article](https://opensource.com/article/21/9/linux-find-command) to better understand how the option worked through looking at an example.
+
 <br/>
 
 ### 4) find -path *pattern*
@@ -213,9 +219,11 @@ Result:
 ./technical/plos
 ```
 
+I learned about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
+
 <br/>
 
-*Note: The source I used to find the above information can be found [here](https://linux.die.net/man/1/find). This is the \find\ Linux man page.*
+*Note: The source I used to find the above information can be found [here](https://linux.die.net/man/1/find). This is the find Linux man page.*
 
 *I also used [this source](https://opensource.com/article/21/9/linux-find-command) for further guidance on how to type out certain commands with their options, such as maxdepth.*
 
