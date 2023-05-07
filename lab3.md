@@ -1,5 +1,5 @@
 # Lab Report 3: Researching Commands
-## __Command-Line Options and Other Ways to Use 'Find'__
+## __Command-Line Options and Other Ways to Use 'find' Command__
 *Evelyn Quan, CSE15L Section A05*
 
 <br/>
@@ -11,11 +11,14 @@ For this report, I have chosen to further research the command-line options and 
 #### Example 1
 
 ```
-esquan@its-gl1w-pc11 MINGW64 //acsnfs4.ucsd.edu/CifsHomes/914/esquan/GitHub/docsearch (main)
 $ find -mtime -0.001
 ```
 
-gave me the following result: `./technical/911report/chapter-1.txt'.
+gave me the following result: 
+
+```
+./technical/911report/chapter-1.txt
+```
 
 <br/>
 
@@ -47,6 +50,8 @@ Result:
 ./technical/911report/preface.txt
 ```
 
+<br/>
+
 ### 2) find -size *n*\[cwbkMG]
 
 #### Example 1
@@ -61,6 +66,8 @@ Result:
 ./technical/plos/pmed.0020191.txt
 ./technical/plos/pmed.0020226.txt
 ```
+
+<br/>
 
 #### Example 2
 
@@ -84,6 +91,8 @@ Result:
 ./technical/plos/pmed.0020278.txt
 ./technical/plos/pmed.0020281.txt
 ```
+
+<br/>
 
 ### 3) find -maxdepth *levels*
 
@@ -134,6 +143,8 @@ Result:
 
 We see that the files under `./technical/government/*` that started with "a" were not included in the output, because this would have required a maxdepth of at least 4.
 
+<br/>
+
 #### Example 2
 
 ```
@@ -155,6 +166,8 @@ Result:
 ./technical/government/Env_Prot_Agen/ro_clear_skies_book.txt
 ./technical/government/Media/residents_sue_city.txt
 ```
+
+<br/>
 
 ### 4) find -path *pattern*
 
@@ -184,6 +197,8 @@ Result:
 ./technical/911report/chapter-9.txt
 ```
 
+<br/>
+
 #### Example 2
 
 ```
@@ -198,6 +213,7 @@ Result:
 ./technical/plos
 ```
 
+<br/>
 
 *Note: The source I used to find the above information can be found [here](https://linux.die.net/man/1/find). This is the \find\ Linux man page.*
 
