@@ -21,6 +21,8 @@ gave me the following result:
 ```
 
 <br/>
+---
+<br/>
 
 #### Example 2
 
@@ -50,6 +52,8 @@ Result:
 ./technical/911report/preface.txt
 ```
 
+<br/>
+
 I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and I also received further guidance with understanding its conceptual reasoning through this [StackExchange](https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days) page.
 
 <br/>
@@ -69,6 +73,8 @@ Result:
 ./technical/plos/pmed.0020226.txt
 ```
 
+<br/>
+---
 <br/>
 
 #### Example 2
@@ -93,6 +99,8 @@ Result:
 ./technical/plos/pmed.0020278.txt
 ./technical/plos/pmed.0020281.txt
 ```
+
+<br/>
 
 I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
 
@@ -148,6 +156,8 @@ Result:
 We see that the files under `./technical/government/*` that started with "a" were not included in the output, because this would have required a maxdepth of at least 4.
 
 <br/>
+---
+<br/>
 
 #### Example 2
 
@@ -170,6 +180,8 @@ Result:
 ./technical/government/Env_Prot_Agen/ro_clear_skies_book.txt
 ./technical/government/Media/residents_sue_city.txt
 ```
+
+<br/>
 
 I found out about this option for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and also used this [Opensource article](https://opensource.com/article/21/9/linux-find-command) to better understand how the option worked through looking at an example.
 
@@ -204,6 +216,8 @@ Result:
 ```
 
 <br/>
+---
+<br/>
 
 #### Example 2
 
@@ -219,13 +233,11 @@ Result:
 ./technical/plos
 ```
 
+<br/>
+
 I learned about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
 
 <br/>
-
-*Note: The source I used to find the above information can be found [here](https://linux.die.net/man/1/find). This is the find Linux man page.*
-
-*I also used [this source](https://opensource.com/article/21/9/linux-find-command) for further guidance on how to type out certain commands with their options, such as maxdepth.*
 
 https://stackoverflow.com/questions/3165883/checking-file-size
 
