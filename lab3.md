@@ -14,8 +14,6 @@ For this report, I have chosen to further research the command-line options and 
 - *-n* is for all values less than *n*
 - *n* is for simply the value *n*.
 
-<br/>
-
 However, something important to note is that the file modification time is truncated. For instance, if a file was last modified 23 hours, 59 minutes, and 59 seconds ago, using *-mtime* would still count the file as being 0 days old. Therefore, somewhat not as intuitively, the following rules can help us better determine what time span we want to search for files in, with *a* standing for the time the file was last modified:
 
 - `find -mtime n` would give *n ≤ a < n + 1* as the time span for the modification of the file. 
@@ -81,8 +79,8 @@ The *n* of 0.005 in this command checks for all the files in <mark>./technical/9
 I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and I also received further guidance with understanding its conceptual reasoning through this [StackExchange](https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days) page.
 
 (Here are the links written out since you can't see them when I save this report as a PDF:
-https://linux.die.net/man/1/find,
-https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days)
+- [https://linux.die.net/man/1/find](https://linux.die.net/man/1/find)
+- [https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days](https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days))
 
 <br/>
 
@@ -242,8 +240,8 @@ For Example 2, I found all files at most 4 levels of directories below my curren
 I found out about this option for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and also used this [Opensource article](https://opensource.com/article/21/9/linux-find-command) to better understand how the option worked through looking at an example.
 
 (Links:
-https://linux.die.net/man/1/find,
-https://opensource.com/article/21/9/linux-find-command)
+- [https://linux.die.net/man/1/find](https://linux.die.net/man/1/find)
+- [https://opensource.com/article/21/9/linux-find-command](https://opensource.com/article/21/9/linux-find-command))
 
 <br/>
 
@@ -311,10 +309,6 @@ This is useful, because it allows us to simplify our output to be as specific as
 
 I learned about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
 
-(Link: https://linux.die.net/man/1/find)
+(Link: [https://linux.die.net/man/1/find](https://linux.die.net/man/1/find))
 
 <br/>
-
-https://stackoverflow.com/questions/3165883/checking-file-size
-
-https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days
