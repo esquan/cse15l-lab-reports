@@ -20,7 +20,9 @@ However, something important to note is that the file modification time is trunc
 - `find -mtime -n` gives *a < n*. 
 - `find -mtime +n` gives *n + 1 ≤ a*. 
 
-For example, writing the full command `find -mtime +1` would find all the files whose data modification time was more than 1 + 1 = 2 days ago. `find -mtime -1` will find files with the data modification time less than 1 day ago, and `find -mtime 1` finds the files that were modified at least 1 day ago and at most 1 + 1 = 2 days. 
+For example, writing the full command `find . -mtime +1` would find all the files whose data modification time was more than 1 + 1 = 2 days ago. `find . -mtime -1` will find files with the data modification time less than 1 day ago, and `find . -mtime 1` finds the files that were modified at least 1 day ago and at most 1 + 1 = 2 days. 
+
+<br/> 
 
 #### Example 1
 
@@ -84,6 +86,19 @@ https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return
 
 ### 2) find -size *n*\[cwbkMG]
 
+*-size* gives all the files that fall under the numerical value of *n*(which similarly follows the same rules as it does for *-mtime* with + and - signs), and the unit of one of the following:
+
+- c (bytes)
+- w (two-byte words)
+- b (512-byte blocks)
+- k (Kilobytes, which are units of 1024 bytes)
+- M (Megabytes, which are units of 1038576 bytes)
+- G (Gigabytes, which are units of 1073741824 bytes)
+
+For instance, `find . -size 1000M` would find all the files in the directory that have a size less than 1000 Megabytes.
+
+<br/> 
+
 #### Example 1
 
 ```
@@ -99,6 +114,10 @@ Result:
 
 <br/>
 
+In this example, I found all the files in the <mark>plos</mark> folder inside <mark>./technical</mark> that had a size less than 2 Kilobytes, which were only 2 files, pmed.0020191.txt and pmed.0020226.txt. This mode/test for <mark>find</mark> is useful, because it allows us to find files that may fit a certain threshold of being uploaded to a site. For example, if a site has a maximum of 2 Kilobyte files that it will allow you to upload, then you know which files in your directory are small enough to fit the criterion.
+
+<br/>
+
 #### Example 2
 
 ```
@@ -106,6 +125,7 @@ $ find ./technical/plos/* -size +2k -size -4k
 ```
 
 Result:
+
 ```
 ./technical/plos/pmed.0010025.txt
 ./technical/plos/pmed.0010029.txt
@@ -124,11 +144,17 @@ Result:
 
 <br/>
 
-I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
+For Example 2 of this mode/test, I found all the files under the directory with path <mark>./technical/plos/*</mark> which had a size greater than 2 Kilobytes but less than 4 Kilobytes, which subsequently printed out the files that matched these criteria. This example illustrates that this mode/test of <mark>find</mark> is useful for finding files within a certain size range, so that for instance, you can try to maximize the amount of data you can upload with greater file sizes but also fits within the size range that an application or size allows you to upload in.
+
+I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find). (Link: https://linux.die.net/man/1/find)
 
 <br/>
 
 ### 3) find -maxdepth *levels*
+
+*-maxdepth* will search for all files that are at most *levels* below the directory command line argument given, or the current directory if no argument is given. *levels* should be a non-negative integer. For instance, `find . -maxdepth 7 -name "*.txt"` would search for all files at most 7 levels of directories below the home directory that have the extension .txt.
+
+<br/> 
 
 #### Example 1
 
@@ -137,6 +163,7 @@ $ find -maxdepth 3 -name "a*.txt"
 ```
 
 Result:
+
 ```
 ./technical/biomed/ar104.txt
 ./technical/biomed/ar118.txt
@@ -175,7 +202,11 @@ Result:
 ./technical/biomed/ar93.txt
 ```
 
-We see that the files under `./technical/government/*` that started with "a" were not included in the output, because this would have required a maxdepth of at least 4.
+<br/>
+
+In this example, I tried to find all files that were at most 3 levels of directories below my current directory that had a name starting with "a" and also had the extension .txt. This found many of the files in the <mark>biomed</mark> folder in <mark>./technical</mark> which fit these criteria. We see that the files under <mark>./technical/government/*</mark> that started with "a" were not included in the output, because this would have required a maxdepth of at least 4, since there are more folders that are inside the <mark>government</mark> folder.
+
+This is useful to note, because we are able to specify which files we want to find and how deep within our directory we want to go to find these files.
 
 <br/>
 
@@ -186,6 +217,7 @@ $ find -maxdepth 4 -name "r*.txt"
 ```
 
 Result:
+
 ```
 ./technical/biomed/rr166.txt
 ./technical/biomed/rr167.txt
@@ -203,11 +235,23 @@ Result:
 
 <br/>
 
+For Example 2, I found all files at most 4 levels of directories below my current directory which were of the .txt extension and started with "r". Because we went 4 levels this time instead of 3 below the current directory, we were able to access files within the folders inside <mark>government</mark> as well this time, as seen in our output. Therefore, this example shows that this option for <mark>find</mark> is very useful for getting specific with what levels of directories below the one we give we want to look for files in, which can better help us navigate through our directories to find the data we may want.
+
 I found out about this option for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and also used this [Opensource article](https://opensource.com/article/21/9/linux-find-command) to better understand how the option worked through looking at an example.
+
+(Links:
+https://linux.die.net/man/1/find,
+https://opensource.com/article/21/9/linux-find-command)
 
 <br/>
 
 ### 4) find -path *pattern*
+
+*-path* finds all the files/directories that match the *pattern* given, in the current directory by default or by the directory given as a command line argument. For instance, `find -path "./sr*sc"` may give an output for a directory called "./src/misc".
+
+Note: One useful action to add onto using *-path* is *-prune*, which is if the path given is a directory, to not descend into it.
+
+<br/> 
 
 #### Example 1
 
@@ -216,6 +260,7 @@ $ find . -path "./technical/911report/chapter-*.txt"
 ```
 
 Result:
+
 ```
 ./technical/911report/chapter-1.txt
 ./technical/911report/chapter-10.txt
@@ -237,6 +282,10 @@ Result:
 
 <br/>
 
+I tried to find in my current directory all the files that matched the path I provided of being in the directory <mark>./technical/911report/</mark> with the extension .txt and starting with "chapter-". All the files in the output match this path. *-path* is useful to use, because as seen in this example, you can find all the files or directories that match a particular path which can help you more easily locate files and navigate through your data.
+
+<br/>
+
 #### Example 2
 
 ```
@@ -244,6 +293,7 @@ $ find . -path "./technical/*" -prune
 ```
 
 Result:
+
 ```
 ./technical/911report
 ./technical/biomed
@@ -253,7 +303,13 @@ Result:
 
 <br/>
 
+In this example, not only did I use *-path* but I also added *-prune* as previously mentioned. I tried to find all the directories in my current directory which matched the path of <mark>./technical/*</mark>, and by using *-prune*, I made sure to not descend into the directory of the path. Therefore, in my output, I find only the paths of the directories 1 level down from <mark>./technical</mark> instead of having an output of all the .txt files in each of these directories as well.
+
+This is useful, because it allows us to simplify our output to be as specific as we can, so we are able to find paths to particular directories more easily.
+
 I learned about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find).
+
+(Link: https://linux.die.net/man/1/find)
 
 <br/>
 
