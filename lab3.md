@@ -14,7 +14,9 @@ For this report, I have chosen to further research the command-line options and 
 - *-n* is for all values less than *n*
 - *n* is for simply the value *n*.
 
-However, something important to note is that the file modification time is truncated. For instance, if a file was last modified 23 hours, 59 minutes, amd 59 seconds ago, using -mtime would still count the file as being 0 days old. Therefore, somewhat not as intuitively, these rules can help better to determine what time span you want to search for files in, with *a* standing for the time the file was last modified:
+<br/>
+
+However, something important to note is that the file modification time is truncated. For instance, if a file was last modified 23 hours, 59 minutes, and 59 seconds ago, using *-mtime* would still count the file as being 0 days old. Therefore, somewhat not as intuitively, the following rules can help us better determine what time span we want to search for files in, with *a* standing for the time the file was last modified:
 
 - `find -mtime n` would give *n ≤ a < n + 1* as the time span for the modification of the file. 
 - `find -mtime -n` gives *a < n*. 
