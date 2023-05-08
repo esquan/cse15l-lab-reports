@@ -8,17 +8,37 @@ For this report, I have chosen to further research the command-line options and 
 
 ### 1) find -mtime *n*
 
+*-mtime* gives you the files that were last modified based on the *n* value given. *n* is a numeric argument which is specified as such:
+
+- *+n* is for all numeric values greater than *n*
+- *-n* is for all values less than *n*
+- *n* is for simply the value *n*.
+
+However, something important to note is that the file modification time is truncated. For instance, if a file was last modified 23 hours, 59 minutes, amd 59 seconds ago, using -mtime would still count the file as being 0 days old. Therefore, somewhat not as intuitively, these rules can help better to determine what time span you want to search for files in, with *a* standing for the time the file was last modified:
+
+- `find -mtime n` would give *n ≤ a < n + 1* as the time span for the modification of the file. 
+- `find -mtime -n` gives *a < n*. 
+- `find -mtime +n` gives *n + 1 ≤ a*. 
+
+For example, writing the full command `find -mtime +1` would find all the files whose data modification time was more than 1 + 1 = 2 days ago. `find -mtime -1` will find files with the data modification time less than 1 day ago, and `find -mtime 1` finds the files that were modified at least 1 day ago and at most 1 + 1 = 2 days. 
+
 #### Example 1
 
 ```
 $ find -mtime -0.001
 ```
 
-gave me the following result: 
+Gave me the following result: 
 
 ```
 ./technical/911report/chapter-1.txt
 ```
+
+<br/>
+
+I had modified only <mark>chapter-1.txt</mark> right before running this command, and I find that the output gives me back only the path to this file. The *n* of -0.001 means that all the files that were last modified less than 0.001 * 24 = 0.024 hours, or 0.024 * 60 = 1.44 minutes ago. Because I did not modify any of the files less than 1.44 minutes ago besides <mark>chapter-1.txt</mark> in <mark>./technical</mark>, it is expected that this file is the only one that was given in the output.
+
+This is useful, because it allows us to track which files we have edited recently, so we can make sure we are tracking and working in the right file if we want to check where our work was done later on.
 
 <br/>
 
@@ -52,7 +72,13 @@ Result:
 
 <br/>
 
+The *n* of 0.005 in this command checks for all the files in <mark>./technical/911report</mark> that were modified at least 0.005 * 24 * 60 = 7.2 minutes ago, but less than 1.005 * 24.12 hours ago. Since I cloned the respository for this lab on the day that I ran this command, I would expect to see all the files in <mark>./technical/911report</mark> show up in the output of this command. This is useful, because this allows us to check certain time frames that we may have modified files in a particular directory, so we can keep track of which file our work was done in.
+
 I found out about this mode/test for <mark>find</mark> through the [Linux man find page](https://linux.die.net/man/1/find), and I also received further guidance with understanding its conceptual reasoning through this [StackExchange](https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days) page.
+
+(Here are the links written out since you can't see them when I save this report as a PDF:
+https://linux.die.net/man/1/find,
+https://unix.stackexchange.com/questions/92346/why-does-find-mtime-1-only-return-files-older-than-2-days)
 
 <br/>
 
