@@ -38,11 +38,15 @@ First, I logged into ieng6 with `ssh cs15lsp23ip@ieng6.ucsd.edu`. Because we pre
 
 ### Step 5: Clone your fork of the repository from your Github account
 
+#### **5a)**
+
 ![Image](lab7images/step5a_lab7.png)
 
 I visited my fork of the Lab 7 repository on Github and copied the HTTPS url in order to clone the repository.
 
 <br/>
+
+#### **5b)**
 
 ![Image](lab7images/step5b_lab7.png)
 
@@ -69,6 +73,8 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 ### Step 7: Edit the code file to fix the failing test
 
+#### **7a)**
+
 *Keys typed: /merge*
 
 I first typed the command `vim ListExamplesTests.java` to open the file **ListExamplesTests.java** in Vim, then typed "/merge" to search for the merge method that we need to fix.
@@ -77,6 +83,8 @@ I first typed the command `vim ListExamplesTests.java` to open the file **ListEx
 
 <br/>
 
+#### **7b)**
+
 *Keys pressed/typed:* `/index1 += 1;` `n` `n`
 
 After doing so, I saw a comment on where to fix the bug in our program by changing "index1" to "index2", so I typed "/index1 += 1;" to search for this line, and pressed "n" 2 times to get down to this line.
@@ -84,6 +92,8 @@ After doing so, I saw a comment on where to fix the bug in our program by changi
 ![Image](lab7images/step7b_lab7.png)
 
 <br/>
+
+#### **7c)**
 
 *Keys pressed:* `1e` `x` `i` `2` `<esc>` `:wq`
 
@@ -120,7 +130,7 @@ I used these commands to add **ListExamples.java** to the commit that I want to 
 
 #### **9b)**
 
-*Key pressed:* `i` `<esc>` `:wq`
+*Key pressed:* `i` `"Fixed the merge method in ListExamples"` `<esc>` `:wq`
 I press `i` to enter insert mode and then typed "Fixed the merge method in ListExamples" as my commit message. After, I exited out of insert mode with using the Esc key, then saved and quit with `:wq`
 
 ![Image](lab7images/step9a_lab7.png)
@@ -129,11 +139,13 @@ I press `i` to enter insert mode and then typed "Fixed the merge method in ListE
 
 #### **9c)**
 
-After saving my commit message, I used the command `git remote remove origin` and then `git remote add origin <url>` with the SSH URL of my forked repository, found on the Github page for this repository (I used the SSH key to avoid any authentication issues with connecting this remote repository, since I previously used the HTTPS URL to clone this repository). Since using `git clone` earlier automatically set up my remote repository as my 'origin'
-
 ![Image](lab7images/step9c_lab7.png)
 
+After saving my commit message, I used the command `git remote remove origin` and then `git remote add origin <url>` with the SSH URL of my forked repository, found on the Github page for this repository (I used the SSH key to avoid any authentication issues with connecting this remote repository, since I previously used the HTTPS URL to clone this repository). Since using `git clone` earlier automatically set up my remote repository as my 'origin', I first had to type 'git remote origin' to remove this then 'git remote add origin' with my SSH URL to add a new origin that I could push to without needing to type in my username and password (since we previously already generated an SSH key for Github).
+
 <br/>
+
+The total time I took to complete all the tasks was 5:10, which would have been longer if I did not have previous practice with performing them.
 
 ![Image](lab7images/step9d_lab7.png)
 
@@ -142,10 +154,6 @@ After saving my commit message, I used the command `git remote remove origin` an
 ![Image](lab7images/step9e_lab7.png)
 
 We see that the commit was successfully pushed to our Github account!
-
-<br/>
-
-*Keys pressed:* 
 
 <br/>
 
