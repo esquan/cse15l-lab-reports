@@ -141,7 +141,7 @@ I press `i` to enter insert mode and then typed "Fixed the merge method in ListE
 
 ![Image](lab7images/step9c_lab7.png)
 
-After saving my commit message, I used the command `git remote remove origin` and then `git remote add origin <url>` with the SSH URL of my forked repository, found on the Github page for this repository (I used the SSH key to avoid any authentication issues with connecting this remote repository, since I previously used the HTTPS URL to clone this repository). Since using `git clone` earlier automatically set up my remote repository as my 'origin', I first had to type 'git remote origin' to remove this then 'git remote add origin' with my SSH URL to add a new origin that I could push to without needing to type in my username and password (since we previously already generated an SSH key for Github).
+After saving my commit message, I used the command `git remote remove origin` and then `git remote add origin <url>` with the SSH URL of my forked repository, found on the Github page for this repository (I used the SSH key to avoid any authentication issues with connecting this remote repository, since I previously used the HTTPS URL to clone this repository). Since using `git clone` earlier automatically set up my remote repository as my 'origin', I first had to type `git remote remove origin` to remove this then 'git remote add origin' with my SSH URL to add a new origin that I could push to without needing to type in my username and password (since we previously already generated an SSH key for Github, and trying to log in with my Github username and password makes an error).
 
 <br/>
 
