@@ -52,6 +52,8 @@ I visited my fork of the Lab 7 repository on Github and copied the HTTPS url in 
 
 I then used the `git clone` command as shown above with the URL I copied.
 
+*Keys typed:* `git clone` `Ctrl + V`
+
 <br/>
 
 ### Step 6: Run the tests, demonstrating that they fail
