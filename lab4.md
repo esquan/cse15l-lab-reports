@@ -48,11 +48,11 @@ I visited my fork of the Lab 7 repository on Github and copied the HTTPS url in 
 
 #### **5b)**
 
+*Keys typed:* `git clone` `Ctrl + V`
+
 ![Image](lab7images/step5b_lab7.png)
 
 I then used the `git clone` command as shown above with the URL I copied.
-
-*Keys typed:* `git clone` `Ctrl + V`
 
 <br/>
 
