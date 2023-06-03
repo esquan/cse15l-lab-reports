@@ -25,17 +25,21 @@ __Detail the failure-inducing input and context. That might mean any or all of t
 
 The failure-inducing input is trying to run the bash command `cat ./*sh` through compiling our Java file (`javac Check.java`) which creates a process where an array of strings representing the bash command is ran and its standard output and/or standard error found from reading the input stream is returned as a string. 
 
-This is all done with our helper methods streamToString and exec, and then we try to run the class CheckExamples (`java CheckExamples`) to specifically run our example of the `cat ./*sh` command. There were no command-line arguments given besides the command to run CheckExamples. 
+This is all done with our helper methods `streamToString` and `exec`, and then we try to run the class CheckExamples (`java CheckExamples`) to specifically run our example of the `cat ./*sh` command. There were no command-line arguments given besides the command to run CheckExamples. 
 
-My working directory is 'lab-report-5-example/lab-report-5-example'. The last few commands I ran consisted of only the ones mentioned above.
+My working directory is '~/Downloads/lab-report-5-example/lab-report-5-example'. The last few commands I ran consisted of only the ones mentioned above.
 
 <br/>
 
 ### TA Response
 
-Hi, good question! Here, the output is telling us that 'No such file or directory' exists for the path './\*.sh'. Think about what it could mean if the program could not find our bash scripts and that './\*.sh' is not recognizable as a path that leads to a valid .sh file.
+Hi, good question! 
 
-You may want to check your current directory again. Are we already within the scripts folder, and can the bash scripts be accessed at our current level? How many levels deep into the Lab-Report-5-Example folder do we need to go in order to access the scripts, and is this reflected in the path written for the bash command? Try reconsidering how we might write the path towards the scripts with this in mind.
+Here, the output is telling us that 'No such file or directory' exists for the path './\*.sh'. Think about what it could mean if the program could not find our bash scripts and that './\*.sh' is not recognizable as a path that leads to a valid .sh file.
+
+You may want to check your current directory again. Here are some things to consider: Are we already within the scripts folder, and can the bash scripts be accessed at our current directory level? How many levels deep into the Lab-Report-5-Example folder do we need to go in order to access the scripts, and is this reflected in the path written for the bash command? 
+
+Try reconsidering how we might write the path towards the scripts with this in mind.
 
 <br/>
 
@@ -43,7 +47,7 @@ You may want to check your current directory again. Are we already within the sc
 
 Hi, thank you for the suggestion! I realized that my bug was not writing the correct path to the bash scripts, and that my previous path would have only worked if the files were not in the scripts folder.
 
-To change this, I made the path "./scripts/\*.sh" to represent the scripts being within the scripts folder that sits within our current directory. This way, we are able to access the file and use the cat command to see their contents.
+To change this, I made the path './scripts/\*.sh' to represent the scripts being within the scripts folder that sits within our current directory. This way, we are able to access the file and use the cat command to see their contents.
 
 ![Image](lab5_images/lab5_fixed.png)
 
@@ -51,7 +55,7 @@ To change this, I made the path "./scripts/\*.sh" to represent the scripts being
 
 ### Overall Setup Information
 
-- File and directory structure needed: We needed to access the **grade.sh** and **bug.sh** files within the scripts folder. The full directory structure to do this on my laptop was "~/Downloads/lab-report-5-example/lab-report-5-example/scripts/\*.sh". My current directory was "~/Downloads/lab-report-5-example/lab-report-5-example", so I wrote the path in my bash command as "./scripts/\*.sh".
+- File and directory structure needed: We needed to access the **grade.sh** and **bug.sh** files within the scripts folder. The full directory structure to do this on my laptop was '~/Downloads/lab-report-5-example/lab-report-5-example/scripts/\*.sh'. My current directory was '~/Downloads/lab-report-5-example/lab-report-5-example', so I wrote the path in my bash command as './scripts/\*.sh'.
 
 <br/>
 
