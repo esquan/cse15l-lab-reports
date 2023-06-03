@@ -31,15 +31,11 @@ My working directory is 'lab-report-5-example/lab-report-5-example'. The last fe
 
 <br/>
 
-<br/>
-
 ### TA Response
 
 Hi, good question! Here, the output is telling us that 'No such file or directory' exists for the path './\*.sh'. Think about what it could mean if the program could not find our bash scripts and that './\*.sh' is not recognizable as a path that leads to a valid .sh file.
 
 You may want to check your current directory again. Are we already within the scripts folder, and can the bash scripts be accessed at our current level? How many levels deep into the Lab-Report-5-Example folder do we need to go in order to access the scripts, and is this reflected in the path written for the bash command? Try reconsidering how we might write the path towards the scripts with this in mind.
-
-<br/>
 
 <br/>
 
@@ -53,18 +49,19 @@ To change this, I made the path "./scripts/\*.sh" to represent the scripts being
 
 <br/>
 
-<br/>
-
 ### Overall Setup Information
 
 - File and directory structure needed: We needed to access the **grade.sh** and **bug.sh** files within the scripts folder. The full directory structure to do this on my laptop was "~/Downloads/lab-report-5-example/lab-report-5-example/scripts/\*.sh". My current directory was "~/Downloads/lab-report-5-example/lab-report-5-example", so I wrote the path in my bash command as "./scripts/\*.sh".
 
+<br/>
 
 - Contents of Check.java before fixing the bug: 
 
 ![Image](lab5_images/check_java_prior.png)
 
-Where the highlighted portion is the bug in the program.
+(Where the highlighted portion is the bug in the program.)
+
+<br/>
 
 - The full commands I ran to trigger the bug:
 
@@ -77,14 +74,17 @@ cat ./*.sh
 
 Output: `cat: './*.sh': No such file or directory`
 
+<br/>
+
 - What to edit to fix the bug: I changed the path for `cat ./*.sh` to instead be `cat ./scripts/*.sh`, which is the correct path to the bash scripts in our current directory.
 
 ![Image](lab5_images/lab5_output.png)
 
 <br/>
 
-<br/>
-
 ## Part 2 - Reflection
 
-Something I learned from lab in the second half of the quarter was using Vim to access things solely from the command line. I found learning about Vim to be very useful and interesting, especially getting to try out the tutorial during lab. I ended up also getting to apply my knowledge of Vim very shortly after learning it 
+Something I learned from lab in the second half of the quarter was using Vim to access things solely from the command line. I found learning about Vim to be very useful and interesting, especially getting to try out the tutorial during lab. I ended up also applying my knowledge of Vim very shortly after learning about it to help me with some of my internship work. Besides Vim, I also found it interesting to see how autograder scripts are written and the way they generally work. It gave me a lot of perspective as to what is going on behind the scenes to display the output I see when turning in a PA. Additionally, running a bash command through Java by using an array of strings as our bash command, then starting a process and getting its input stream as our output, was interesting to learn more about and practice as I created a debugging scenario in this lab report. 
+
+Overall, I enjoyed learning and practicing concepts in lab that could be useful to things I might do in the future professionally, because it makes the material seem less conceptual and more applicable to a real-world setting.
+
